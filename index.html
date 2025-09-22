@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 1 Moya</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+        body {
+            background-color: #d49cff;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: auto;
+            padding: 40px;
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0,0,0.1)
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #a32cb1;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a32bbf;
+        }
+
+        #output {
+            font-weight: bold;
+            color: #2c3e50;
+            text-align: left;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>String Showcase: My Basic Info</h2>
+    <p>Name:</p>
+    <input type="text" name="" id="name" placeholder="Yanna Moya">
+
+    <p>Age:</p>
+    <input type="number" name="" id="age" placeholder="16">
+
+    <p>School:</p>
+    <input type="text" name="" id="school" placeholder="OBMC">
+
+
+    <button py-click="generate_message">generate message</button>
+
+    <br>
+
+    <div id="output">
+        
+    </div>
+
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
